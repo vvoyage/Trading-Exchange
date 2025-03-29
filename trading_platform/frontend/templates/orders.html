@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Your Orders</h2>
+<p>Here you can view and manage your orders.</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Order ID</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Пример данных -->
+        <tr>
+            <td>12345</td>
+            <td>Buy</td>
+            <td>0.5 BTC</td>
+            <td>Completed</td>
+        </tr>
+        <tr>
+            <td>67890</td>
+            <td>Sell</td>
+            <td>1.2 ETH</td>
+            <td>Pending</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}
